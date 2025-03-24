@@ -411,6 +411,16 @@ Code Push → `GitHub` / `GitLab Actions` trigger build.
 
 - Deploy → Push to `Netlify`/`Vercel`/`AWS`.
 
+3. Containerization and Container Ochestration
+
+- `Docker`
+
+- `Kubernates`
+
+4. Monitoring & Error Tracking
+
+– Use `Prometheus`, `Grafana`, `Sentry`, `LogRocket`, `New Relic`.
+
 ## Scalability Strategies
 
 For large-scale applications, consider:
