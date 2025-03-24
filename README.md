@@ -448,7 +448,7 @@ Code Push → `GitHub` / `GitLab Actions` trigger build.
 
 4. Monitoring & Error Tracking
 
-– Use `Prometheus`, `Grafana`, `Sentry`, `LogRocket`, `New Relic`.
+– use `Prometheus`, `Grafana`, `Sentry`, `LogRocket`, `New Relic`.
 
 <br />
 <br />
