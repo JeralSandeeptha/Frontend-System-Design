@@ -278,6 +278,22 @@ Comparison
 | LocalStorage      | 5-10MB                 | Yes                        | User preferences, small data       |
 | SessionStorage    | 5-10MB                 | No                         | Temporary session-based data       |
 
+## 
+
+## Scalability Strategies
+
+For large-scale applications, consider:
+
+**Monorepo vs. Polyrepo**
+- `Monorepo (Nx, Turborepo)` → One repo for multiple frontend modules.
+
+- `Polyrepo` → Separate repositories for different frontend services.
+
+**Edge Computing & CDNs**
+
+- `CDN (Cloudflare, Fastly)` → Distributes content globally for faster load times.
+
+- `Edge Functions` → Run logic closer to the user (e.g., Cloudflare Workers).
 
 ## Best Practices
 
