@@ -388,9 +388,9 @@ Testing ensures reliability and stability.
 - Cross-Browser Testing – Check UI on Chrome, Safari, Edge, and Firefox.
 
 📌 Best Practices: 
-✔️ Follow the AAA Pattern (Arrange, Act, Assert).
-✔️ Use mocking for API calls.
-✔️ Aim for 80%+ test coverage.
+- ✔️ Follow the AAA Pattern (Arrange, Act, Assert).
+- ✔️ Use mocking for API calls.
+- ✔️ Aim for 80%+ test coverage.
 
 <br />
 <br />
@@ -448,7 +448,7 @@ Code Push → `GitHub` / `GitLab Actions` trigger build.
 
 4. Monitoring & Error Tracking
 
-– use `Prometheus`, `Grafana`, `Sentry`, `LogRocket`, `New Relic`.
+- use `Prometheus`, `Grafana`, `Sentry`, `LogRocket`, `New Relic`.
 
 <br />
 <br />
