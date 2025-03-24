@@ -25,6 +25,29 @@ Frontend system design is all about planning and architecting the user interface
 
 Frontend system design is all about planning and architecting the user interface of an application, ensuring scalability, maintainability, and performance. It involves decisions about component structure, state management, performance optimizations, and UI/UX best practices.
 
+## Frontend Architecture
+
+
+
+## Frontend Technologies
+
+| Framework     | Pros                                                     | Cons                                                |
+| :------------ |:--------------------------------------------------------:| --------------------------------------------------: |
+| React         | Component-based, Virtual DOM, Huge community             | Requires additional libraries for state management  |
+| Vue.js        | Simplicity, Reactive data binding, Great for small apps  | Smaller ecosystem than React                        |
+| Angular       | Full-fledged framework, Two-way data binding             | Steeper learning curve                              |
+| Svelte        | No Virtual DOM, Highly optimized                         | Smaller community                                   |
+
+📌 Best for:
+
+- React → Scalable applications
+
+- Vue → Small to mid-sized apps
+
+- Angular → Enterprise-grade apps
+
+- Svelte → High-performance apps
+
 ## Client Side Caching
 
 Client-side caching refers to the process of storing web resources (HTML, CSS, JavaScript, images, API responses, etc.) on a user's browser or device to avoid unnecessary network requests and improve loading speeds.
@@ -277,6 +300,41 @@ Comparison
 | IndexedDB         | Large                  | Yes                        | Storing structured data            |
 | LocalStorage      | 5-10MB                 | Yes                        | User preferences, small data       |
 | SessionStorage    | 5-10MB                 | No                         | Temporary session-based data       |
+
+## Testing and Quality Assurance
+
+Testing ensures reliability and stability.
+
+- Unit Tests (Jest, Mocha) – Test small components.
+
+- Integration Tests (React Testing Library) – Test interaction between components.
+
+- End-to-End (E2E) Tests (Cypress, Playwright) – Simulate real user behavior.
+
+📌 Best Practices: 
+✔️ Follow the AAA Pattern (Arrange, Act, Assert).
+✔️ Use mocking for API calls.
+✔️ Aim for 80%+ test coverage.
+
+## State Management
+
+Managing state is crucial for a scalable frontend system.
+
+1. Local State (Component-level state)
+
+- Managed using useState in React.
+
+- Global State (Shared across multiple components)
+
+2. Context API – Lightweight, good for small apps.
+
+- Redux – Centralized store, good for large apps.
+
+- Recoil / Zustand – Alternative lightweight state managers.
+
+3. Server State (Remote data fetched from APIs)
+
+- React Query, SWR – Helps manage caching and API fetching efficiently.
 
 ## Deployment and CI/CD
 
