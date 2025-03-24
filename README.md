@@ -354,11 +354,15 @@ Comparison
 
 Testing ensures reliability and stability.
 
-- Unit Tests (Jest, Mocha) – Test small components.
+- Unit Tests (`Jest`, `Mocha`, `RTL`, `Vitest`) – Test small components.
 
-- Integration Tests (React Testing Library) – Test interaction between components.
+- Integration Tests (`React Testing Library`) – Test interaction between components.
 
-- End-to-End (E2E) Tests (Cypress, Playwright) – Simulate real user behavior.
+- Performance Testing – Measure speed with `Lighthouse`.
+
+- End-to-End (E2E) Tests (`Cypress`, `Playwright`) – Simulate real user behavior.
+
+- Cross-Browser Testing – Check UI on Chrome, Safari, Edge, and Firefox.
 
 📌 Best Practices: 
 ✔️ Follow the AAA Pattern (Arrange, Act, Assert).
