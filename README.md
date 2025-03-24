@@ -2,6 +2,8 @@
 
 Frontend system design is all about planning and architecting the user interface of an application, ensuring scalability, maintainability, and performance. It involves decisions about component structure, state management, performance optimizations, and UI/UX best practices.
 
+<br />
+
 ## Table of Contents
 
 - [Frontend System Design](#frontend-system-design) 
@@ -21,11 +23,15 @@ Frontend system design is all about planning and architecting the user interface
 - [Scalability Strategies](#scalability-strategies)
 - [Best Practices](#best-practices)
 
+<br />
+<br />
+
 ## Frontend System Design
 
 Frontend system design is all about planning and architecting the user interface of an application, ensuring scalability, maintainability, and performance. It involves decisions about component structure, state management, performance optimizations, and UI/UX best practices.
 
-
+<br />
+<br />
 
 ## Frontend Architecture
 
@@ -49,7 +55,8 @@ Frontend architecture defines how a web application is structured, ensuring modu
 4. Progressive Web Apps (PWAs)
 - Web apps that behave like native mobile apps with offline support.
 
-
+<br />
+<br />
 
 ## Frontend Technologies
 
@@ -70,7 +77,8 @@ Frontend architecture defines how a web application is structured, ensuring modu
 
 - Svelte → High-performance apps
 
-
+<br />
+<br />
 
 ## API Handling and Data Fetching
 
@@ -91,6 +99,9 @@ Best Practices:
 ✔️ Implement error handling (try...catch).
 ✔️ Use pagination, caching, and lazy loading for efficiency.
 
+<br />
+<br />
+
 ## Performance Optimization
 
 Performance is crucial for frontend applications.
@@ -102,6 +113,9 @@ Key Optimization Techniques:
 - ✅ Reduce Repaints & Reflows → Optimize CSS changes, use will-change property.
 - ✅ Optimize Images → Use WebP format, lazy load images.
 - ✅ Service Workers → Cache assets for faster page loads.
+
+<br />
+<br />
 
 ## Client Side Caching
 
@@ -356,6 +370,9 @@ Comparison
 | LocalStorage      | 5-10MB                 | Yes                        | User preferences, small data       |
 | SessionStorage    | 5-10MB                 | No                         | Temporary session-based data       |
 
+<br />
+<br />
+
 ## Testing and Quality Assurance
 
 Testing ensures reliability and stability.
@@ -374,6 +391,9 @@ Testing ensures reliability and stability.
 ✔️ Follow the AAA Pattern (Arrange, Act, Assert).
 ✔️ Use mocking for API calls.
 ✔️ Aim for 80%+ test coverage.
+
+<br />
+<br />
 
 ## State Management
 
@@ -394,6 +414,9 @@ Managing state is crucial for a scalable frontend system.
 3. Server State (Remote data fetched from APIs)
 
 - React Query, SWR – Helps manage caching and API fetching efficiently.
+
+<br />
+<br />
 
 ## Deployment and CI/CD
 
@@ -427,6 +450,9 @@ Code Push → `GitHub` / `GitLab Actions` trigger build.
 
 – Use `Prometheus`, `Grafana`, `Sentry`, `LogRocket`, `New Relic`.
 
+<br />
+<br />
+
 ## Scalability Strategies
 
 For large-scale applications, consider:
@@ -442,6 +468,9 @@ For large-scale applications, consider:
 
 - `Edge Functions` → Run logic closer to the user (e.g., Cloudflare Workers).
 
+<br />
+<br />
+
 ## Best Practices
 
 ✔️ Use modular components for reusability.
@@ -450,3 +479,6 @@ For large-scale applications, consider:
 ✔️ Use Linting & Prettier for code consistency.
 ✔️ Always version APIs for backward compatibility.
 ✔️ Use design systems like Material UI, Tailwind CSS, or Chakra UI.
+
+<br />
+<br />
