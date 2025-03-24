@@ -111,6 +111,8 @@ request.onupgradeneeded = function (event) {
 
 6. Application Cache
 
+- HTML5 introduced Application Cache (AppCache), but it has been deprecated in favor of Service Workers.
+
 Best Practices for Client Side Caching
 - Use Long Cache Durations for Static Assets: (e.g., images, fonts)
 - Enable Service Workers for Offline Caching.
