@@ -81,6 +81,30 @@ localStorage.setItem("username", "JohnDoe");
 console.log(localStorage.getItem("username")); // "JohnDoe"
 ```
 
+```ts
+const fetchData = async () => {
+  const cachedData = localStorage.getItem('myData');
+
+  if (cachedData) return JSON.parse(cachedData);
+
+  const response = await fetch('https://api.example.com/data');
+  const data = await response.json();
+
+  localStorage.setItem('myData', JSON.stringify(data)); // Cache the response
+  return data;
+};
+
+export default function MyComponent() {
+  const [data, setData] = React.useState(null);
+
+  React.useEffect(() => {
+    fetchData().then(setData);
+  }, []);
+
+  return <div>{JSON.stringify(data)}</div>;
+}
+```
+
 4. Session Storage
 
 - Simple key-value storage mechanisms built into browsers.
@@ -89,6 +113,20 @@ console.log(localStorage.getItem("username")); // "JohnDoe"
 ```js
 sessionStorage.setItem("token", "abcd1234");
 console.log(sessionStorage.getItem("token")); // "abcd1234"
+```
+
+```ts
+const fetchData = async () => {
+  const cachedData = sessionStorage.getItem('myData');
+
+  if (cachedData) return JSON.parse(cachedData);
+
+  const response = await fetch('https://api.example.com/data');
+  const data = await response.json();
+
+  sessionStorage.setItem('myData', JSON.stringify(data));
+  return data;
+};
 ```
 
 5. IndexedDB
@@ -109,7 +147,98 @@ request.onupgradeneeded = function (event) {
 };
 ```
 
-6. Application Cache
+This is a React example
+```cmd
+npm install idb-keyval
+```
+
+```ts
+import { get, set } from 'idb-keyval';
+
+const fetchData = async () => {
+  const cachedData = await get('myData');
+  if (cachedData) return cachedData;
+
+  const response = await fetch('https://api.example.com/data');
+  const data = await response.json();
+
+  await set('myData', data);
+  return data;
+};
+```
+
+6.  In-Memory Caching (Context API / React Query)
+
+```cmd
+npm install @tanstack/react-query
+```
+
+This is Context API
+```ts
+import React, { createContext, useContext, useState } from 'react';
+
+const CacheContext = createContext(null);
+
+export const CacheProvider = ({ children }) => {
+  const [cache, setCache] = useState({});
+
+  const setCachedData = (key, data) => {
+    setCache((prev) => ({ ...prev, [key]: data }));
+  };
+
+  return (
+    <CacheContext.Provider value={{ cache, setCachedData }}>
+      {children}
+    </CacheContext.Provider>
+  );
+};
+
+export const useCache = () => useContext(CacheContext);
+```
+
+```ts
+import { useCache } from './CacheContext';
+
+const MyComponent = () => {
+  const { cache, setCachedData } = useCache();
+
+  React.useEffect(() => {
+    if (!cache['myData']) {
+      fetch('https://api.example.com/data')
+        .then((res) => res.json())
+        .then((data) => setCachedData('myData', data));
+    }
+  }, [cache, setCachedData]);
+
+  return <div>{JSON.stringify(cache['myData'])}</div>;
+};
+```
+
+This is react query
+```ts
+import { useQuery } from '@tanstack/react-query';
+import axios from 'axios';
+
+const fetchData = async () => {
+  const { data } = await axios.get('https://api.example.com/data');
+  return data;
+};
+
+export default function MyComponent() {
+  const { data, error, isLoading } = useQuery({
+    queryKey: ['myData'], // Cached key
+    queryFn: fetchData, 
+    staleTime: 1000 * 60 * 5, // Cache for 5 minutes
+  });
+
+  if (isLoading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error.message}</p>;
+
+  return <div>{JSON.stringify(data)}</div>;
+}
+```
+
+7. Application Cache
 
 - HTML5 introduced Application Cache (AppCache), but it has been deprecated in favor of Service Workers.
 
