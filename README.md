@@ -5,6 +5,9 @@ Frontend system design is all about planning and architecting the user interface
 ## Table of Contents
 
 - [Frontend System Design](#frontend-system-design) 
+- [Frontend Architecture](#frontend-architecture)
+- [Frontend Technologies](#frontend-technologies)
+- [Component Design Principles](#component-design-principles)
 - [Component Based Architecture](#component-based-architecture)
 - [Authentication and Security](#authentication-and-security)
 - [API Handling and Data Fetching](#api-handling-and-data-fetching)
@@ -15,6 +18,8 @@ Frontend system design is all about planning and architecting the user interface
 - [Testing and Quality Assurance](#testing-and-quality-assurance)
 - [Micro Frontends](#micro-frontends)
 - [Deployment and CI/CD](#deployment-and-cd/cd)
+- [Scalability Strategies](#scalability-strategies)
+- [Best Practices](#best-practices)
 
 ## Frontend System Design
 
@@ -272,3 +277,13 @@ Comparison
 | IndexedDB         | Large                  | Yes                        | Storing structured data            |
 | LocalStorage      | 5-10MB                 | Yes                        | User preferences, small data       |
 | SessionStorage    | 5-10MB                 | No                         | Temporary session-based data       |
+
+
+## Best Practices
+
+✔️ Use modular components for reusability.
+✔️ Optimize for mobile-first and responsive design.
+✔️ Follow SOLID principles for frontend architecture.
+✔️ Use Linting & Prettier for code consistency.
+✔️ Always version APIs for backward compatibility.
+✔️ Use design systems like Material UI, Tailwind CSS, or Chakra UI.
