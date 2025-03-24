@@ -85,6 +85,18 @@ Best Practices:
 ✔️ Implement error handling (try...catch).
 ✔️ Use pagination, caching, and lazy loading for efficiency.
 
+## Performance Optimization
+
+Performance is crucial for frontend applications.
+
+Key Optimization Techniques:
+✅ Lazy Loading → Load components only when needed.
+✅ Code Splitting → Split large JS bundles into smaller chunks.
+✅ Memoization → Use React.memo, useMemo, useCallback to avoid unnecessary re-renders.
+✅ Reduce Repaints & Reflows → Optimize CSS changes, use will-change property.
+✅ Optimize Images → Use WebP format, lazy load images.
+✅ Service Workers → Cache assets for faster page loads.
+
 ## Client Side Caching
 
 Client-side caching refers to the process of storing web resources (HTML, CSS, JavaScript, images, API responses, etc.) on a user's browser or device to avoid unnecessary network requests and improve loading speeds.
