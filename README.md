@@ -457,12 +457,12 @@ Code Push → `GitHub` / `GitLab Actions` trigger build.
 
 For large-scale applications, consider:
 
-**Monorepo vs. Polyrepo**
+1. **Monorepo vs. Polyrepo**
 - `Monorepo (Nx, Turborepo)` → One repo for multiple frontend modules.
 
 - `Polyrepo` → Separate repositories for different frontend services.
 
-**Edge Computing & CDNs**
+2. **Edge Computing & CDNs**
 
 - `CDN (Cloudflare, Fastly)` → Distributes content globally for faster load times.
 
