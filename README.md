@@ -25,6 +25,8 @@ Frontend system design is all about planning and architecting the user interface
 
 Frontend system design is all about planning and architecting the user interface of an application, ensuring scalability, maintainability, and performance. It involves decisions about component structure, state management, performance optimizations, and UI/UX best practices.
 
+
+
 ## Frontend Architecture
 
 Frontend architecture defines how a web application is structured, ensuring modularity, reusability, and scalability.
@@ -47,6 +49,8 @@ Frontend architecture defines how a web application is structured, ensuring modu
 4. Progressive Web Apps (PWAs)
 - Web apps that behave like native mobile apps with offline support.
 
+
+
 ## Frontend Technologies
 
 | Framework     | Pros                                                     | Cons                                                |
@@ -65,6 +69,8 @@ Frontend architecture defines how a web application is structured, ensuring modu
 - Angular → Enterprise-grade apps
 
 - Svelte → High-performance apps
+
+
 
 ## API Handling and Data Fetching
 
