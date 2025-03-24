@@ -278,7 +278,27 @@ Comparison
 | LocalStorage      | 5-10MB                 | Yes                        | User preferences, small data       |
 | SessionStorage    | 5-10MB                 | No                         | Temporary session-based data       |
 
-## 
+## Deployment and CI/CD
+
+Deploying frontend apps requires automation and scalability.
+
+1. Hosting Options:
+
+- Static Hosting → `Vercel`, `Netlify`, `GitHub Pages`.
+
+- Cloud-Based Hosting → `AWS S3`, `Firebase` Hosting.
+
+- Server-Side Rendering (SSR) → `Next.js` with `Vercel`.
+
+2. CI/CD Pipeline:
+
+Code Push → `GitHub` / `GitLab Actions` trigger build.
+
+- Lint & Test → `ESLint`, `Jest` run checks.
+
+- Build & Optimize → `Webpack`, `Babel` process code.
+
+- Deploy → Push to `Netlify`/`Vercel`/`AWS`.
 
 ## Scalability Strategies
 
