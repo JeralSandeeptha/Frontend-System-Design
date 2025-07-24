@@ -39,6 +39,7 @@ Frontend system design is all about planning and architecting the user interface
 ### How Web Works
 
 ![Image](https://res.cloudinary.com/djgwvmcdl/image/upload/v1753325823/6ceba32e-2060-43ef-9e7e-426bf040db7a.png)
+![Image](https://res.cloudinary.com/djgwvmcdl/image/upload/v1753356316/89bdafea-0143-4ec5-b3c8-f8d2b610cafe.png)
 
 <br />
 <br />
