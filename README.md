@@ -7,7 +7,8 @@ Frontend system design is all about planning and architecting the user interface
 ## Table of Contents
 
 - [Frontend System Design](#frontend-system-design) 
-- [Basic Concepts](#basic-concepts) 
+- [Basic Concepts](#basic-concepts)
+- [Communication Protocols](#communication-protocols)
 - [Frontend Architectures](#frontend-architectures)
 - [Frontend Technologies](#frontend-technologies)
 - [Component Design Principles](#component-design-principles)
@@ -49,6 +50,16 @@ Frontend system design is all about planning and architecting the user interface
 - Execute JS
 - Merge DOM and CSSOM, then creates render tree
 - Calculate and Paint
+
+<br />
+<br />
+
+### Communication Protocols
+- They are `rules that define `how data is exchanged between systems` over a network. In the web world, they dictate how browsers, servers, APIs, and services interact.
+
+![Image](https://res.cloudinary.com/djgwvmcdl/image/upload/v1753367511/1_ti3XEIDbWdS6zFtbzsMIiw_awiayf.png)
+![Image](https://res.cloudinary.com/djgwvmcdl/image/upload/v1753367556/images_w9ax8x.jpg)
+![Image](https://res.cloudinary.com/djgwvmcdl/image/upload/v1753367585/tcp-vs-udp-communications-1024x493_cfnvhu.png)
 
 <br />
 <br />
