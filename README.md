@@ -7,7 +7,8 @@ Frontend system design is all about planning and architecting the user interface
 ## Table of Contents
 
 - [Frontend System Design](#frontend-system-design) 
-- [Frontend Architecture](#frontend-architecture)
+- [Basic Concepts](#basic-concepts) 
+- [Frontend Architectures](#frontend-architectures)
 - [Frontend Technologies](#frontend-technologies)
 - [Component Design Principles](#component-design-principles)
 - [Component Based Architecture](#component-based-architecture)
@@ -33,7 +34,16 @@ Frontend system design is all about planning and architecting the user interface
 <br />
 <br />
 
-## Frontend Architecture
+## Basic Concepts
+
+### How Web Works
+
+![Image](https://res.cloudinary.com/djgwvmcdl/image/upload/v1753325823/6ceba32e-2060-43ef-9e7e-426bf040db7a.png)
+
+<br />
+<br />
+
+## Frontend Architectures
 
 Frontend architecture defines how a web application is structured, ensuring modularity, reusability, and scalability.
 
