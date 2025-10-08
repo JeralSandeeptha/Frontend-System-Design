@@ -14,7 +14,7 @@ Frontend system design is all about planning and architecting the user interface
 - [Component Design Principles](./topics/component_design_principles/principles.md)
 - [Component Based Architecture](#component-based-architecture)
 - [Authentication and Security](#authentication-and-security)
-- [API Handling and Data Fetching](#api-handling-and-data-fetching)
+- [API Handling and Data Fetching](./topics/apis/api_handling.md)
 - [UI/UX Design Principles](#ui/ux-design-principles)
 - [Performance Optimization](#performance-optimization)
 - [Client Side Caching](#client-side-caching)
@@ -24,28 +24,6 @@ Frontend system design is all about planning and architecting the user interface
 - [Deployment and CI/CD](./topics/cicd/cicd.md)
 - [Scalability Strategies](#scalability-strategies)
 - [Best Practices](./topics/best_practices/best_practices.md)
-
-<br />
-<br />
-
-## API Handling and Data Fetching
-
-Frontend systems interact with the backend via APIs.
-
-Types of API Communication:
-
-- REST API → Standard JSON-based communication.
-
-- GraphQL API → Fetch only the required data (great for complex apps).
-
-- WebSockets → Real-time communication (used in chat apps).
-
-- gRPC → High-performance APIs for microservices.
-
-Best Practices:
-✔️ Use Axios or fetch for API calls.
-✔️ Implement error handling (try...catch).
-✔️ Use pagination, caching, and lazy loading for efficiency.
 
 <br />
 <br />
