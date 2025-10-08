@@ -6,7 +6,7 @@ Frontend system design is all about planning and architecting the user interface
 
 ## Table of Contents
 
-- [Frontend System Design](#frontend-system-design) 
+- [Frontend System Design](./topics/system_design/frontend-system-design.md) 
 - [Basic Concepts](#basic-concepts)
 - [Communication Protocols](#communication-protocols)
 - [Frontend Architectures](#frontend-architectures)
@@ -19,18 +19,11 @@ Frontend system design is all about planning and architecting the user interface
 - [Performance Optimization](#performance-optimization)
 - [Client Side Caching](#client-side-caching)
 - [State Management](#state-management)
-- [Testing and Quality Assurance](#testing-and-quality-assurance)
+- [Testing and Quality Assurance](./topics/testing/testing.md)
 - [Micro Frontends](#micro-frontends)
 - [Deployment and CI/CD](#deployment-and-cd/cd)
 - [Scalability Strategies](#scalability-strategies)
 - [Best Practices](#best-practices)
-
-<br />
-<br />
-
-## Frontend System Design
-
-Frontend system design is all about planning and architecting the user interface of an application, ensuring scalability, maintainability, and performance. It involves decisions about component structure, state management, performance optimizations, and UI/UX best practices.
 
 <br />
 <br />
@@ -400,28 +393,6 @@ Comparison
 | IndexedDB         | Large                  | Yes                        | Storing structured data            |
 | LocalStorage      | 5-10MB                 | Yes                        | User preferences, small data       |
 | SessionStorage    | 5-10MB                 | No                         | Temporary session-based data       |
-
-<br />
-<br />
-
-## Testing and Quality Assurance
-
-Testing ensures reliability and stability.
-
-- Unit Tests (`Jest`, `Mocha`, `RTL`, `Vitest`) – Test small components.
-
-- Integration Tests (`React Testing Library`) – Test interaction between components.
-
-- Performance Testing – Measure speed with `Lighthouse`.
-
-- End-to-End (E2E) Tests (`Cypress`, `Playwright`) – Simulate real user behavior.
-
-- Cross-Browser Testing – Check UI on Chrome, Safari, Edge, and Firefox.
-
-📌 Best Practices: 
-- ✔️ Follow the AAA Pattern (Arrange, Act, Assert).
-- ✔️ Use mocking for API calls.
-- ✔️ Aim for 80%+ test coverage.
 
 <br />
 <br />
