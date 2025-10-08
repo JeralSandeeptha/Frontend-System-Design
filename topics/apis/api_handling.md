@@ -12,6 +12,3 @@ Frontend systems interact with the backend via APIs.
 ✔️ Use Axios or fetch for API calls.
 ✔️ Implement error handling (try...catch).
 ✔️ Use pagination, caching, and lazy loading for efficiency.
-
-<br />
-<br />
