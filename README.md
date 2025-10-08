@@ -18,12 +18,12 @@ Frontend system design is all about planning and architecting the user interface
 - [UI/UX Design Principles](#ui/ux-design-principles)
 - [Performance Optimization](#performance-optimization)
 - [Client Side Caching](#client-side-caching)
-- [State Management](#state-management)
+- [State Management](./topics/state_management/state_management.md)
 - [Testing and Quality Assurance](./topics/testing/testing.md)
 - [Micro Frontends](#micro-frontends)
-- [Deployment and CI/CD](#deployment-and-cd/cd)
+- [Deployment and CI/CD](./topics/cicd/cicd.md)
 - [Scalability Strategies](#scalability-strategies)
-- [Best Practices](#best-practices)
+- [Best Practices](./topics/best_practices/best_practices.md)
 
 <br />
 <br />
@@ -321,64 +321,6 @@ Comparison
 <br />
 <br />
 
-## State Management
-
-Managing state is crucial for a scalable frontend system.
-
-1. Local State (Component-level state)
-
-- Managed using useState in React.
-
-- Global State (Shared across multiple components)
-
-2. Context API – Lightweight, good for small apps.
-
-- Redux – Centralized store, good for large apps.
-
-- Recoil / Zustand – Alternative lightweight state managers.
-
-3. Server State (Remote data fetched from APIs)
-
-- React Query, SWR – Helps manage caching and API fetching efficiently.
-
-<br />
-<br />
-
-## Deployment and CI/CD
-
-Deploying frontend apps requires automation and scalability.
-
-1. Hosting Options:
-
-- Static Hosting → `Vercel`, `Netlify`, `GitHub Pages`.
-
-- Cloud-Based Hosting → `AWS S3`, `Firebase` Hosting.
-
-- Server-Side Rendering (SSR) → `Next.js` with `Vercel`.
-
-2. CI/CD Pipeline:
-
-Code Push → `GitHub` / `GitLab Actions` trigger build.
-
-- Lint & Test → `ESLint`, `Jest` run checks.
-
-- Build & Optimize → `Webpack`, `Babel` process code.
-
-- Deploy → Push to `Netlify`/`Vercel`/`AWS`.
-
-3. Containerization and Container Ochestration
-
-- `Docker`
-
-- `Kubernates`
-
-4. Monitoring & Error Tracking
-
-- use `Prometheus`, `Grafana`, `Sentry`, `LogRocket`, `New Relic`.
-
-<br />
-<br />
-
 ## Scalability Strategies
 
 For large-scale applications, consider:
@@ -393,18 +335,3 @@ For large-scale applications, consider:
 - `CDN (Cloudflare, Fastly)` → Distributes content globally for faster load times.
 
 - `Edge Functions` → Run logic closer to the user (e.g., Cloudflare Workers).
-
-<br />
-<br />
-
-## Best Practices
-
-- ✔️ Use modular components for reusability.
-- ✔️ Optimize for mobile-first and responsive design.
-- ✔️ Follow SOLID principles for frontend architecture.
-- ✔️ Use Linting & Prettier for code consistency.
-- ✔️ Always version APIs for backward compatibility.
-- ✔️ Use design systems like Material UI, Tailwind CSS, or Chakra UI.
-
-<br />
-<br />
