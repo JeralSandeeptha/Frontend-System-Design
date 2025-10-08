@@ -7,11 +7,11 @@ Frontend system design is all about planning and architecting the user interface
 ## Table of Contents
 
 - [Frontend System Design](./topics/system_design/frontend-system-design.md) 
-- [Basic Concepts](#basic-concepts)
-- [Communication Protocols](#communication-protocols)
-- [Frontend Architectures](#frontend-architectures)
+- [Basic Concepts](./topics/basic_concepts/concepts.md)
+- [Communication Protocols](./topics/communication_protocols/protocols.md)
+- [Frontend Architectures](./topics/architectures/architectures.md)
 - [Frontend Technologies](#frontend-technologies)
-- [Component Design Principles](#component-design-principles)
+- [Component Design Principles](./topics/component_design_principles/principles.md)
 - [Component Based Architecture](#component-based-architecture)
 - [Authentication and Security](#authentication-and-security)
 - [API Handling and Data Fetching](#api-handling-and-data-fetching)
@@ -24,82 +24,6 @@ Frontend system design is all about planning and architecting the user interface
 - [Deployment and CI/CD](#deployment-and-cd/cd)
 - [Scalability Strategies](#scalability-strategies)
 - [Best Practices](#best-practices)
-
-<br />
-<br />
-
-## Basic Concepts
-
-### How Web Works
-
-![Image](https://res.cloudinary.com/djgwvmcdl/image/upload/v1753325823/6ceba32e-2060-43ef-9e7e-426bf040db7a.png)
-![Image](https://res.cloudinary.com/djgwvmcdl/image/upload/v1753356316/89bdafea-0143-4ec5-b3c8-f8d2b610cafe.png)
-![Image](https://res.cloudinary.com/djgwvmcdl/image/upload/v1753357630/fa4ff3e6-65e0-47b5-a982-43fa0c11e79d.png)
-
-### How Web Page Loads
-- Parse / Load the HTML
-- Fetch external resources like CSS (Blocks the rendering), JS (Blocks the parsing)
-- Using CSS creating CSSOM
-- Execute JS
-- Merge DOM and CSSOM, then creates render tree
-- Calculate and Paint
-
-<br />
-<br />
-
-### Communication Protocols
-- They are `rules that define `how data is exchanged between systems` over a network. In the web world, they dictate how browsers, servers, APIs, and services interact.
-
-![Image](https://res.cloudinary.com/djgwvmcdl/image/upload/v1753367511/1_ti3XEIDbWdS6zFtbzsMIiw_awiayf.png)
-![Image](https://res.cloudinary.com/djgwvmcdl/image/upload/v1753367870/0292-explaining-8-popular-network-protocols-in-1-diagram_rsojln.png)
-![Image](https://res.cloudinary.com/djgwvmcdl/image/upload/v1753367585/tcp-vs-udp-communications-1024x493_cfnvhu.png)
-
-<br />
-<br />
-
-## Frontend Architectures
-
-Frontend architecture defines how a web application is structured, ensuring modularity, reusability, and scalability.
-
-1. Monolithic Frontend
-
-- All UI components and logic exist in a single repository.
-- Example: Traditional MVC frameworks (Angular, old React apps).
-
-2. Micro Frontends
-
-- Different parts of the UI are developed and deployed independently.
-- Example: Different teams own separate modules (React for one, Vue for another).
-
-3. Server-Driven UI
-
-- The backend dictates the UI structure dynamically.
-- Example: GraphQL-powered frontends, React Native with Backend-driven UI.
-
-4. Progressive Web Apps (PWAs)
-- Web apps that behave like native mobile apps with offline support.
-
-<br />
-<br />
-
-## Frontend Technologies
-
-| Framework     | Pros                                                     | Cons                                                |
-| :------------ |:--------------------------------------------------------:| --------------------------------------------------: |
-| React         | Component-based, Virtual DOM, Huge community             | Requires additional libraries for state management  |
-| Vue.js        | Simplicity, Reactive data binding, Great for small apps  | Smaller ecosystem than React                        |
-| Angular       | Full-fledged framework, Two-way data binding             | Steeper learning curve                              |
-| Svelte        | No Virtual DOM, Highly optimized                         | Smaller community                                   |
-
-📌 Best for:
-
-- React → Scalable applications
-
-- Vue → Small to mid-sized apps
-
-- Angular → Enterprise-grade apps
-
-- Svelte → High-performance apps
 
 <br />
 <br />
