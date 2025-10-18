@@ -24,6 +24,6 @@ Frontend system design is all about planning and architecting the user interface
 - [Deployment and CI/CD](./topics/cicd/cicd.md)
 - [Scalability Strategies](./topics/scalability/scalability.md)
 - [Best Practices](./topics/best_practices/best_practices.md)
-- [Logging and Minitoring]()
+- [Logging and Minitoring](./topics/loggin_monitoring/logging_monitoring.md)
 - [Offline Support]()
 - [Accessibility](./topics/accessibility/accessibility.md)
