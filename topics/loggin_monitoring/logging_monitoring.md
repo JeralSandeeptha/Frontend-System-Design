@@ -2,8 +2,8 @@
 
 ## What Is Frontend Logging and Monitoring?
 
-`Logging` = Recording events, errors, and behaviors that occur in the frontend (browser or app)
-`Monitoring` = Observing those logs + performance + usage over time through a dashboard or alert system
+- `Logging` = Recording events, errors, and behaviors that occur in the frontend (browser or app)
+- `Monitoring` = Observing those logs + performance + usage over time through a dashboard or alert system
 
 In the frontend, logging and monitoring help you:
 - Detect JavaScript errors and crashes in real time
