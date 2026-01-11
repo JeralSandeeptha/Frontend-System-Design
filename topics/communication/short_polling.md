@@ -1,6 +1,8 @@
 # Short Polling
 
-What it is: The client keeps asking the server over and over:
+What it is: The client keeps asking the server over and over
+
+We are sending requests to the server for regular intervals. We may can get the data or we may can not get updated data. There are no holding the requests. It means requests are short lived.
 
 “Anything new?”
 “Anything new?”
