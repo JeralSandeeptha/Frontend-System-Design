@@ -8,9 +8,9 @@ Frontend system design is all about planning and architecting the user interface
 
 - [Frontend System Design](./topics/system_design/frontend-system-design.md) 
 - [Basic Concepts](./topics/basic_concepts/concepts.md)
-- [Communication Protocols](./topics/communication_protocols/protocols.md)
+- [Communication](./topics/communication/communication.md)
 - [Frontend Architectures](./topics/architectures/architectures.md)
-- [Frontend Technologies](#frontend-technologies)
+- [Frontend Technologies](./topics/technologies/technologies.md)
 - [Component Design Principles](./topics/component_design_principles/principles.md)
 - [Component Based Architecture](#component-based-architecture)
 - [Authentication and Security](#authentication-and-security)
